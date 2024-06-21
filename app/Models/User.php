@@ -6,10 +6,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Octopy\Impersonate\Concerns\HasImpersonation;
 
 class User extends Authenticatable
 {
-    use HasFactory, Notifiable;
+    use HasFactory, Notifiable, HasImpersonation;
 
     /**
      * The attributes that are mass assignable.
@@ -48,5 +49,26 @@ class User extends Authenticatable
     public function notes()
     {
         return $this->hasMany(Note::class);
+    }
+
+    /**
+     * @return string
+     */
+    public function getImpersonateDisplayText(): string
+    {
+        return $this->name;
+    }
+
+    /**
+     * This following is useful for performing user searches through the interface,
+     * You can use fields in relations freely using dot notation,
+     * 
+     * example: posts.title, department.name.   
+     */
+    public function getImpersonateSearchField(): array
+    {
+        return [
+            'name', 'notes.title',
+        ];
     }
 }

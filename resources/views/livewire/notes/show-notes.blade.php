@@ -37,8 +37,8 @@ new class extends Component {
                                 收件人: <span class="font-semibold">{{ $note->recipient }}</span>
                             </p>
                             <div class="space-x-1">
-                                <x-mini-button rounded outline gray icon="eye"></x-mini-button>
-                                <x-mini-button rounded outline icon="trash"></x-mini-button>
+                                {{-- <x-mini-button rounded outline gray icon="eye"></x-mini-button> --}}
+                                {{-- <x-mini-button rounded outline icon="trash"></x-mini-button> --}}
                             </div>
                         </div>
                     </x-card>
