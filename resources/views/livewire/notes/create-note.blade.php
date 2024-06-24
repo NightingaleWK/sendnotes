@@ -25,7 +25,7 @@ new class extends Component {
                 'body' => $validatedData['noteBody'],
                 'recipient' => $validatedData['noteRecipient'],
                 'send_date' => $validatedData['noteSendDate'],
-                'is_published' => false,
+                'is_published' => true,
             ]);
 
         session()->flash('status', 'Note successfully updated.');
