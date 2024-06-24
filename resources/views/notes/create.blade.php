@@ -6,10 +6,10 @@
     </x-slot>
 
     <div class="py-12">
-        <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-            <div class="p-6 text-gray-900">
-                <livewire:notes.create-note />
-            </div>
+        <div class="max-w-2xl mx-auto space-y-4 sm:px-6 lg:px-8">
+            <x-button class="mb-8" href="{{ route('notes.index') }}" outline gray icon="arrow-left">全部便条</x-button>
+
+            <livewire:notes.create-note />
         </div>
     </div>
 </x-app-layout>

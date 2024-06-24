@@ -5958,16 +5958,16 @@
         },
         {
             "name": "wireui/wireui",
-            "version": "v2.0.2",
+            "version": "v2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wireui/wireui.git",
-                "reference": "de12e5cd79652f6d2a8d0727a58f657109934ea3"
+                "reference": "3f8ea11b6f39ba822af7a9d1494efb4570e8f7d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wireui/wireui/zipball/de12e5cd79652f6d2a8d0727a58f657109934ea3",
-                "reference": "de12e5cd79652f6d2a8d0727a58f657109934ea3",
+                "url": "https://api.github.com/repos/wireui/wireui/zipball/3f8ea11b6f39ba822af7a9d1494efb4570e8f7d1",
+                "reference": "3f8ea11b6f39ba822af7a9d1494efb4570e8f7d1",
                 "shasum": ""
             },
             "require": {
@@ -6021,9 +6021,9 @@
             ],
             "support": {
                 "issues": "https://github.com/wireui/wireui/issues",
-                "source": "https://github.com/wireui/wireui/tree/v2.0.2"
+                "source": "https://github.com/wireui/wireui/tree/v2.0.3"
             },
-            "time": "2024-06-20T12:23:13+00:00"
+            "time": "2024-06-24T05:50:05+00:00"
         }
     ],
     "packages-dev": [
@@ -7117,16 +7117,16 @@
         },
         {
             "name": "laravel-lang/locales",
-            "version": "2.8.0",
+            "version": "2.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/locales.git",
-                "reference": "687cdca9ee6465c13cf6c0690b505eb1127d5c3d"
+                "reference": "e9a62aee6bef3b527b5bdf1eae028dc1d11dc623"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/locales/zipball/687cdca9ee6465c13cf6c0690b505eb1127d5c3d",
-                "reference": "687cdca9ee6465c13cf6c0690b505eb1127d5c3d",
+                "url": "https://api.github.com/repos/Laravel-Lang/locales/zipball/e9a62aee6bef3b527b5bdf1eae028dc1d11dc623",
+                "reference": "e9a62aee6bef3b527b5bdf1eae028dc1d11dc623",
                 "shasum": ""
             },
             "require": {
@@ -7186,7 +7186,7 @@
                 "issues": "https://github.com/Laravel-Lang/locales/issues",
                 "source": "https://github.com/Laravel-Lang/locales"
             },
-            "time": "2024-06-01T23:45:12+00:00"
+            "time": "2024-06-22T20:53:21+00:00"
         },
         {
             "name": "laravel-lang/native-country-names",
