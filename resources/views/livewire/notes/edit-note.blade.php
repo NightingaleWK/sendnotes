@@ -60,12 +60,11 @@ new #[layout('layouts.app')] class extends Component {
             <x-textarea wire:model="noteBody" label="你的便签" placeholder="记录当下，分享喜悦"></x-textarea>
             <x-input icon="user" wire:model="noteRecipient" label="收件人"
                 placeholder="yourfriend@email.com"></x-input>
-            <x-datetime-picker icon="calendar" wire:model="noteSendDate" label="发送时间" parse-format="YYYY-MM-DD"
-                without-time="true" />
+            <x-datetime-picker icon="calendar" wire:model="noteSendDate" label="发送时间" without-time="true" />
             <x-checkbox label="便签是否发布" wire:model="noteIsPublished"></x-checkbox>
             <div class="flex justify-between pt-4">
                 <x-button type="submit" spinner="saveNote">保存便签</x-button>
-                <x-button herf="{{ route('notes.index') }}" outline gray negative>返回列表</x-button>
+                <x-button href="{{ route('notes.index') }}" outline gray icon="arrow-left">返回列表</x-button>
             </div>
 
             <x-action-message on="note-saved"></x-action-message>

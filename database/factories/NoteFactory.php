@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
@@ -24,10 +25,13 @@ class NoteFactory extends Factory
     public function definition(): array
     {
         return [
-            'user_id' => fake()->randomElement([1, 2, 3, 4, 5]),
+            'user_id' => User::factory(),
             'title' => fake()->sentence(),
             'body' => fake()->paragraph(),
-            'send_date' => now(),
+            'send_date' => fake()->dateTimeBetween('now', '+3 week'),
+            'recipient' => fake()->email(),
+            'is_published' => true,
+            'like_count' => fake()->numberBetween(0, 100),
         ];
     }
 }
