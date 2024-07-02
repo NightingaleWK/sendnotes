@@ -11,6 +11,11 @@ new class extends Component {
         ];
     }
 
+    public function placeholder(): string
+    {
+        return view('components.loading')->render();
+    }
+
     public function destroy($id)
     {
         $note = Note::findOrFail($id);
